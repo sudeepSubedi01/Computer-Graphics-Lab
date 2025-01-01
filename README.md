@@ -3,7 +3,7 @@
 - Tutorial for setup: https://www.youtube.com/watch?v=TEMhWt9WwTA
 - Compiler used: **TDM-GCC 4.9.2 32-bit Release**
 
-## How to write program?
+## How to code program?
 1. In Dev-Cpp, choose compiler **TDM-GCC 4.9.2 32-bit Release**
 2. Create a new project: **Console Graphics Application**
 3. Save the project with `.dev`

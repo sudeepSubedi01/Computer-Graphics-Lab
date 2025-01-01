@@ -4,26 +4,25 @@
 using namespace std;
 
 void dda(){
-    float x1, x2, y1, y2;
-    int steps;
+    float x1, x2, y1, y2,xin,yin;
+    int steps,dx,dy;
 
     cout << "Enter first coordinates (x1 y1): ";
     cin >> x1 >> y1;
     cout << "Enter second coordinates (x2 y2): ";
     cin >> x2 >> y2;
 
-    float c = y2 - y1;
-    float d = x2 - x1;
-    float m = c / d;
+    dy = y2 - y1;
+    dx = x2 - x1;
 
-    if (abs(c) > abs(d)) {
-        steps = abs(c);
+    if (abs(dy) > abs(dx)) {
+        steps = abs(dy);
     } else {
-        steps = abs(d);
+        steps = abs(dx);
     }
 
-    float xin = d / (float)steps;
-    float yin = c / (float)steps;
+    xin = dx / (float)steps;
+    yin = dy / (float)steps;
 
     for (int i = 0; i <= steps; i++) {
         putpixel(round(x1), round(y1), WHITE);
