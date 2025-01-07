@@ -1,6 +1,6 @@
 [Project]
-FileName=BLA_Algorithm.dev
-Name=BLA_Algorithm
+FileName=Circle-Drawing-Algorithm.dev
+Name=Circle-Drawing-Algorithm
 Type=1
 Ver=2
 ObjFiles=
@@ -51,7 +51,7 @@ AutoIncBuildNr=0
 SyncProduct=1
 
 [Unit1]
-FileName=BLA_Algorithm.cpp
+FileName=Circle.cpp
 CompileCpp=1
 Folder=
 Compile=1
