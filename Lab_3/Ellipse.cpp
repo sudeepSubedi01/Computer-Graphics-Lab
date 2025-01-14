@@ -68,10 +68,8 @@ int main() {
     // Step 3: Read the values for xc, yc, rx, ry
     int xc, yc, rx, ry;
 
-    cout << "Enter the center x-coordinate (xc): ";
-    cin >> xc;
-    cout << "Enter the center y-coordinate (yc): ";
-    cin >> yc;
+    cout << "Enter the center (xc,yc) coordinate: ";
+    cin >> xc >> yc;
     cout << "Enter the semi-major axis (rx): ";
     cin >> rx;
     cout << "Enter the semi-minor axis (ry): ";
