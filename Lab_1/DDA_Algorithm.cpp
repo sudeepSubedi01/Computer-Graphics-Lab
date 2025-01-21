@@ -4,8 +4,8 @@
 using namespace std;
 
 void dda(){
-    float x1, x2, y1, y2,xin,yin;
-    int steps,dx,dy;
+    float x1, x2, y1, y2,xinc,yinc, dx,dy;
+    int steps,i;
 
     cout << "Enter first coordinates (x1 y1): ";
     cin >> x1 >> y1;
@@ -16,19 +16,31 @@ void dda(){
     dx = x2 - x1;
 
     if (abs(dy) > abs(dx)) {
-        steps = abs(dy);
+        steps = round(abs(dy));
     } else {
-        steps = abs(dx);
+        steps = round(abs(dx));
     }
 
-    xin = dx / (float)steps;
-    yin = dy / (float)steps;
-
-    for (int i = 0; i <= steps; i++) {
+    xinc = dx / steps;
+    yinc = dy / steps;
+    
+	cout<<"dx = "<<dx<<endl;
+	cout<<"dy = "<<dy<<endl;
+		
+	cout<<"Steps = "<< steps<<endl;
+	
+	cout<<"xinc = "<<xinc<<endl;
+	cout<<"yinc = "<<yinc<<endl;
+	
+	cout<<"Points Plotted: "<<endl;
+	cout<<"Step\t(x,y)\t\t\tround((x,y))"<<endl;
+	
+    for (i = 0; i <= steps; i++) {
         putpixel(round(x1), round(y1), WHITE);
-        delay(10);  
-        x1 = x1 + xin;
-        y1 = y1 + yin;
+        cout<<i<<"\t("<<x1<<","<<y1<<")\t"<<"\t("<<round(x1)<<","<<round(y1)<<")\t"<<endl;
+        delay(100);
+        x1 = x1 + xinc;
+        y1 = y1 + yinc;
     }
 }
 

@@ -75,45 +75,51 @@ int main() {
     int gd = DETECT, gm;
 
     initgraph(&gd, &gm, "");
+    setbkcolor(WHITE);
+    cleardevice();
 
     cout << "Enter the coordinates of the 5 points (x y):" << endl;
-//    a[0][0] = 100;
-//    a[1][0] = 100; 
-//    a[0][1] = 200; 
-//    a[1][1] = 100; 
-//    a[0][2] = 200; 
-//    a[1][2] = 200; 
-//    a[0][3] = 100; 
-//    a[1][3] = 200;
-//	a[0][4] = 100; 
-//	a[1][4] = 100;
+   a[0][0] = 100;
+   a[1][0] = 100; 
+   a[0][1] = 200; 
+   a[1][1] = 100; 
+   a[0][2] = 200; 
+   a[1][2] = 200; 
+   a[0][3] = 100; 
+   a[1][3] = 200;
+    a[0][4] = 100; 
+	a[1][4] = 100;
 
-    for (i = 0; i < 5; i++) {
-        cin >> a[0][i] >> a[1][i];
-    }
+//    for (i = 0; i < 2; i++) {
+//    	cout<<"Enter two: ";
+//        cin >> a[0][i] >> a[1][i];
+//    }
+	
+	
+	
     cout<<"Original Shape Drawn"<<endl;
-    draw(a);
+   draw(a);
     
-    cout<<endl<<endl;
-    cout<<"-----Translation-----"<<endl;
-    translate(a);
-    cleardevice();
-    setcolor(GREEN);
-    draw(a);
-    
-    cout<<endl<<endl;
-    cout<<"-----Scaling-----"<<endl;
-    scale(a);
-    cleardevice();
-    setcolor(BLUE);
-    draw(a);
-    
-    cout<<endl<<endl;
-    cout<<"-----Rotation-----"<<endl;
-    rotate(a);
-    cleardevice();
-    setcolor(GREEN);
-    draw(a);
+   cout<<endl<<endl;
+   cout<<"-----Translation-----"<<endl;
+   translate(a);
+   cleardevice();
+   setcolor(GREEN);
+   draw(a);
+   
+   cout<<endl<<endl;
+   cout<<"-----Scaling-----"<<endl;
+   scale(a);
+   cleardevice();
+   setcolor(BLUE);
+   draw(a);
+   
+   cout<<endl<<endl;
+   cout<<"-----Rotation-----"<<endl;
+   rotate(a);
+   cleardevice();
+   setcolor(GREEN);
+   draw(a);
     
 //    cout<<endl<<endl;
 //    cout<<"-----Reflection across X-axis-----"<<endl;
